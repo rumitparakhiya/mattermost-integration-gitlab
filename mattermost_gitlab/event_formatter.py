@@ -81,7 +81,7 @@ class PushEvent(BaseEvent):
         )
 
         message += '\n**Commits:**\n'
-        for commit in self.data['commits']
+        for commit in self.data['commits']:
             message += '[' + commit['id'][:6] + ': ' + commit['message'] + '](' + commit['url'] + ')\n'
 
         return message;
